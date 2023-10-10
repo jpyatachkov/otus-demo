@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      pre {
+        color: red;
+      }
+
+      #some-id {
+        color: blue;
+      }
+
+      .some-class {
+        color: green;
+      }
+
+      pre[data-attribute="some-value"] {
+        color: yellow;
+      }
+
+      pre.some-class span {
+        /* 0*100 + 1*10 + 2*1 = 12 */
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <pre id="some-id" class="some-class" data-attribute="some-value">
+Какой будет цвет <span>текста</span>?
+</pre
+    >
+  </body>
+</html>
